@@ -30,6 +30,10 @@
     padding-left: 1rem; /* 7! */
     color: aliceblue;
   }
-
+.button{
+  background-color: rgb(222, 10, 144);
+  border-radius: 4px;
+  margin: 5px;
+}
   
   

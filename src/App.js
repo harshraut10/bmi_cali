@@ -1,5 +1,5 @@
 import LogReg from "./Components/LogReg";
-import Home from "./Components/Home/Home";
+import Home from "./Components/Home/Home.js";
 function App() {
   return (
     <div>

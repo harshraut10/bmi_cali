@@ -14,3 +14,9 @@
     padding-bottom: 30px;
 
 }
+
+.containerHome h1{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}

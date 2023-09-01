@@ -3,7 +3,9 @@ const NavBar = () => {
   return (
     <div className='containerNav'>
      <nav>
-     <h2>Title</h2>
+      <span>
+     <button className='button'>History</button>
+     <button className='button'>BMI</button></span>
      <ul>
     <li>Signed-In as HARSH</li>
     </ul>

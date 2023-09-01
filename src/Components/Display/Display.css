@@ -4,4 +4,15 @@
     height: 400px;
     border-radius: 10px;
     padding: 10px;
+    
+}
+
+.cdisp{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn_adjs{
+    margin-left: 450px;
 }
