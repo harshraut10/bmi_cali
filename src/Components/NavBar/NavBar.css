@@ -1,0 +1,35 @@
+.containerNav{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+    width: 1300px;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.containerNav h2{
+    color: aliceblue;
+}
+  
+.containerNav nav {
+    display:flex; /* 1 */
+    justify-content: space-between; 
+    padding: 1rem 2rem; /* 3 */
+    background-color:  #3c0080; /* 4 */
+    list-style: none;
+    
+  }
+
+  .containerNav nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+  }
+  
+  .containerNav nav li {
+    padding-left: 1rem; /* 7! */
+    color: aliceblue;
+  }
+
+  
+  

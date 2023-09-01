@@ -1,8 +1,10 @@
 import LogReg from "./Components/LogReg";
+import Home from "./Components/Home/Home";
 function App() {
   return (
     <div>
-      <LogReg/>
+      {/* <LogReg/> */}
+      <Home/>
     </div>
   );
 }
