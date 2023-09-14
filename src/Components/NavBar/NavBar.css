@@ -31,7 +31,13 @@
     color: aliceblue;
   }
 .button{
-  background-color: rgb(222, 10, 144);
+  background-color:#2c2922;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.button.clicked{
+  background-color:rgb(222, 10, 144);
   border-radius: 4px;
   margin: 5px;
 }

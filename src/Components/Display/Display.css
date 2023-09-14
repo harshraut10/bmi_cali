@@ -1,18 +1,33 @@
 .containerDisp{
     color: black;
     background-color: aliceblue;
-    height: 400px;
+    height: auto;
     border-radius: 10px;
     padding: 10px;
     
 }
 
 .cdisp{
-    display: flex;
-    justify-content: center;
+    display:inline-block;
+    /* flex-direction: row; */
+    justify-content:center;
     margin: 20px;
+    margin-left: 450px;
+    
 }
 
 .btn_adjs{
+    /* margin-left: 450px; */
+}
+
+.btn_adjs.clicked{
+    /* margin-left: 450px; */
+    background-color:#8317fe;
+    color: white;
+    border-width: 10px;
+    border-color: black;
+}
+
+.margin{
     margin-left: 450px;
 }

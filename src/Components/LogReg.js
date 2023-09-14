@@ -23,19 +23,19 @@ const LogReg = () => {
        
 
         <div className='input'>
-          '<img src={email_icon} alt=''/>
+          <img src={email_icon} alt=''/>
           <input type='email' placeholder='Email ID'/>
         </div>
 
         <div className='input'>
-          '<img src={password_icon} alt=''/>
+          <img src={password_icon} alt=''/>
           <input type='password' placeholder='Password'/>
         </div>
       </div>
       {action==='Sign up' ? null :
           <div className='forgot-password'>Lost Password? <span>Click Here</span></div>
       } 
-      
+      <button className='submit-btn'>Submit</button>
       <div className='submit-container'>
         <div className={action==='Login'?'submit gray':'submit'} onClick={()=>{setAction('Sign up')}}>Sign up</div>
         <div className={action==='Sign up'?'submit gray':'submit'} onClick={()=>{setAction('Login')}}>Login</div>

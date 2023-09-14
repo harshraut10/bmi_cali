@@ -3,7 +3,7 @@ import Home from "./Components/Home/Home.js";
 function App() {
   return (
     <div>
-      {/* <LogReg/> */}
+      <LogReg/>
       <Home/>
     </div>
   );
