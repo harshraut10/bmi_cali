@@ -3,13 +3,17 @@ import './Home.css'
 import NavBar from '../NavBar/NavBar'
 import Display from '../Display/Display'
 import History from '../History/History'
-const Home = () => {
+const Home = (props) => {
   
 
   const [status,setStatus]=useState('')
   const [hist,setHist]=useState(false)
   const [disp,setDisp]=useState(true)
 
+  const handler=()=>{
+    localStorage.setItem('log',false)
+    props.handlerH()
+  }
   const flagHandler=(flag)=>{
     console.log(flag)
     if(flag === 'bmi'){
@@ -35,6 +39,7 @@ const Home = () => {
     <h1>FITNESS TRACKER</h1>
     <NavBar handler={flagHandler}/>
     {content}
+    <button onClick={handler}>Back</button>
    </div>
       
     

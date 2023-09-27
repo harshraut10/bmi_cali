@@ -9,12 +9,12 @@ const NavBar = (props) => {
     <div className='containerNav'>
      <nav>
       <span>
-     <button className={`button ${history ? 'clicked' : ''}`}  onClick={()=>{
+     {/* <button className={`button ${history ? 'clicked' : ''}`}  onClick={()=>{
       setHistory(true)
       setBmi(false)
       props.handler('history')
 
-     }} >History</button>
+     }} >History</button> */}
 
      <button  className={`button ${bmi ? 'clicked' : ''}`}  onClick={()=>{
       setHistory(false)

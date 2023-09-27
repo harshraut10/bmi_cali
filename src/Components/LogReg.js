@@ -3,8 +3,32 @@ import './Log_Reg.css'
 import user_icon from './Assets/person.png';
 import email_icon from './Assets/email.png';
 import password_icon from './Assets/password.png';
-const LogReg = () => {
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+
+import { changeFn } from '../ReduxStore/Redux';
+const LogReg = (props) => {
+  const val=useSelector((state)=> state.BMI.value)
   const [action,setAction]=useState('Sign up')
+  const dispatch=useDispatch();
+
+  const [email,setEmail]=useState('')
+  const [pwd,setPwd]=useState('')
+
+  const emailHandler =(e)=>{
+    setEmail(e.target.value)
+  }
+
+  const pwHandler=(e)=>{
+    setPwd(e.target.value)
+  }
+
+  const handler=()=>{
+    dispatch(changeFn({...val,email:email , pwd:pwd}))
+    console.log('complete')
+    props.handler(email,pwd)
+  }
+
   return (
     <div>
       <h1 className='head'>FITNESS TRACKER</h1>
@@ -24,18 +48,18 @@ const LogReg = () => {
 
         <div className='input'>
           <img src={email_icon} alt=''/>
-          <input type='email' placeholder='Email ID'/>
+          <input onChange={emailHandler} type='email' placeholder='Email ID'/>
         </div>
 
         <div className='input'>
           <img src={password_icon} alt=''/>
-          <input type='password' placeholder='Password'/>
+          <input onChange={pwHandler} type='password' placeholder='Password'/>
         </div>
       </div>
       {action==='Sign up' ? null :
           <div className='forgot-password'>Lost Password? <span>Click Here</span></div>
       } 
-      <button className='submit-btn'>Submit</button>
+      <button onClick={handler} className='submit-btn'>Submit</button>
       <div className='submit-container'>
         <div className={action==='Login'?'submit gray':'submit'} onClick={()=>{setAction('Sign up')}}>Sign up</div>
         <div className={action==='Sign up'?'submit gray':'submit'} onClick={()=>{setAction('Login')}}>Login</div>

@@ -15,3 +15,12 @@ input[type=number] {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  .form label{
+    font-size: 33px;
+    
+  }
+
+  .form button{
+    font-size: 25px;
+  }
